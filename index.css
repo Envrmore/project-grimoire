@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#box1 {
+    background-image: url("./Media/entrance.jpg");
+}
+
+p {
+    line-height: 50%;;
+}
