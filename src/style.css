@@ -1,0 +1,7 @@
+@keyframes fade {
+    0% {opacity: 0;}
+    8% {opacity: 1;}
+    33% {opacity: 1;}
+    41% {opacity: 0;}
+    100% {opacity: 0;}
+  }
