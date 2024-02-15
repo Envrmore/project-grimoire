@@ -6,45 +6,58 @@
     <title>Grimoire</title>
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="src/style.css">
+    <script defer src="script.js"></script>
+    <style>
+        html, body {scroll-behavior: smooth;}
+    </style>
 </head>
 <body class="font-poppins overflow-x-hidden">
-    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-pattern1">
-        <div class="z-10 text-xl text-white p-8 float-right mr-8">
-            <a class="ml-6 hover:underline" href="">Home</a>
-            <a class="ml-6" href="">About Us</a>
-            <a class="ml-6" href="">Blog</a>
-        </div>
-        <div class="w-full flex flex-wrap justify-center items-center">
-            <img class="p-8 max-w-[500px]" src="media/header1.png" alt="">
-            <div class="max-w-xl mx-auto">
-                <h1 class="text-8xl font-bold text-white">Explore New Frontiers of Knowledge</h1>
-                <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Get Started</button>
+    <nav class="bg-transparent fixed w-full z-20 p-4">
+            <div class="flex flex-wrap justify-center text-white text-xl font-medium">
+                <a class="rounded-lg mr-6 p-2" href="">Home</a>
+                <a class="rounded-lg mr-6 p-2" href="">About</a>
+                <a class="rounded-lg mr-6 p-2" href="">Contact</a>
+                <a class="rounded-lg mr-6 p-2" href="">Blog</a>
+            </div>
+    </nav>
+    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-pattern1 p-8" id="home">
+        <div class="w-full flex flex-wrap lg:justify-center lg:items-center">
+            <img class="mt-16 p-8 max-w[250px] lg:max-w-[500px]" src="media/header1.png" alt="">
+            <div class="max-w-xl mx-auto text-center">
+                <h1 class="lg:text-8xl text-5xl font-bold text-white">Explore New Frontiers of Knowledge</h1>
+                <button type="button" class="text-white mt-8 bg-transparent outline outline-2 hover:outline-none hover:bg-gradient-to-br hover:from-purple-600 hover:to-blue-500 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2">Get Started</button>
             </div>
         </div>
     </div>
-    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-pattern2">
-        
+    <div class="w-full bg-no-repeat bg-cover bg-center p-8 bg-pattern2" id="aboutus">
+        <h1 class="text-white text-5xl font-bold text-center p-8">About</h1>
+        <div class="bg-white/25 text-center backdrop-blur-xl p-8 rounded-xl text-2xl max-w-xl mx-auto">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam dignissimos deserunt et tenetur nostrum veniam. Et molestias eum quidem, ratione totam corporis dignissimos quasi quo, esse doloremque alias autem eius!
+            Recusandae temporibus quod incidunt esse enim, fugit, a nostrum nesciunt hic aliquam, laudantium iusto. Aperiam maiores, commodi veniam accusantium, recusandae explicabo, ut quibusdam reiciendis nihil laboriosam officia eum neque blanditiis!</h1>
+        </div>
+        <div class="mt-8 bg-white/25 text-center backdrop-blur-xl p-8 rounded-xl text-2xl max-w-xl mx-auto">
+            <img class="rounded-lg" src="media/suisei.png" alt="">
+        </div>
     </div>
-    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-sliderbg">
-        <div class="mx-auto max-w-5xl h-screen bg-gradient-to-b from-black/30 to-transparent p-6 rounded-xl">
+    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-pattern1 p-8">
+        <div class="mx-auto my-auto max-w-5xl h-full bg-white/25 p-6 rounded-xl">
             <img class="absolute max-w-[975px] rounded-lg opacity-0" src="media/bril1.JPG" alt="">
             <img class="absolute max-w-[975px] rounded-lg opacity-0" src="media/bril2.JPG" alt="">
             <img class="absolute max-w-[975px] rounded-lg opacity-0" src="media/bril3.JPG" alt="">
           </div>
     </div>
-    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-contactbg">
+    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-pattern2" id="contact">
         <h1 class="text-6xl font-poppins p-8 text-white font-bold text-center">Contact</h1>
         <div class="flex flex-wrap justify-center items-center mt-12">
-            <div class="w-[500px] max-h-screen bg-white mx-auto rounded-xl">
-                <img class="mt-6 mx-auto rounded-lg max-w-[450px] h-full" src="media/suisei.png" alt="">
+            <div class="w-[400px] max-h-screen bg-white mx-8 rounded-xl">
+                <img class="mt-6 mx-auto rounded-lg max-w-[350px] h-full" src="media/suisei.png" alt="">
                 <h1 class="text-3xl font-poppins font-bold p-6 text-center">Suisex</h1>
             </div>
-            <div class="w-[500px] max-h-screen bg-white mx-auto rounded-xl">
-                <img class="mt-6 mx-auto rounded-lg max-w-[450px] h-full" src="media/suisei.png" alt="">
+            <div class="w-[400px] max-h-screen bg-white mx-8 rounded-xl">
+                <img class="mt-6 mx-auto rounded-lg max-w-[350px] h-full" src="media/suisei.png" alt="">
                 <h1 class="text-3xl font-poppins font-bold p-6 text-center">Suisex</h1>
             </div>
         </div>
     </div>
 </body>
-<script src="script.js"></script>
 </html>

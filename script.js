@@ -12,3 +12,21 @@ function showSlides() {
   slides[slideIndex-1].style.opacity = "1";
   setTimeout(showSlides, 3000); // Change image every 8 seconds
 }
+
+// Navbar // 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(function (navLink) {
+    const initialClass = navLink.className;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 500) {
+        navLink.className = initialClass + ' bg-black/25 backdrop-blur-xl rounded-lg';
+      } else {
+        navLink.className = initialClass;
+      }
+    });
+  });
+});
