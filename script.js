@@ -3,7 +3,7 @@ showSlides();
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("absolute max-w-[975px] rounded-lg opacity-0");
+  var slides = document.getElementsByClassName("absolute right-1/2 translate-x-1/2 h-auto max-w-3xl rounded-lg opacity-0");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.opacity = "0";
   }
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
       if (window.scrollY > 500) {
-        navLink.className = initialClass + ' bg-black/25 backdrop-blur-xl rounded-lg hidden';
+        navLink.className = initialClass + 'bg-black/25 backdrop-blur-xl rounded-lg hidden';
       } else {
         navLink.className = initialClass;
       }
@@ -42,15 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
         navBurger.className = initialClass;
       }
     });
-  });
 
-  navBurger.addEventListener("click,", function() {
-    if (navLinks.classList.contains("hidden")) {
-      navLinks.classList.remove("hidden");
-    } else {
-      navLinks.classList.remove("hidden");
-    }
-  })
+    window.addEventListener('click', function() {
+      if (navLinks.classList.contains("hidden")) {
+        navLinks.classList.remove("hidden");
+      }
+    });
+  });
 });
 
 // Poster //
