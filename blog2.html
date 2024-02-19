@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimoire</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script defer src="script.js"></script>
+    <style>
+        html, body {scroll-behavior: smooth;}
+        body::-webkit-scrollbar{
+            display: none;};
+    </style>
+</head>
+<body class="font-poppins overflow-x-hidden">
+    <nav class="bg-transparent fixed w-full z-20 p-4">
+        <div class="flex flex-wrap justify-center max-w-lg mx-auto text-white text-xl font-medium bg-black/25 backdrop-blur-xl rounded-lg">
+            <a class="rounded-lg mr-6 p-2" href="index.html#home">Home</a>
+            <a class="rounded-lg mr-6 p-2" href="index.html#aboutus">About</a>
+            <a class="rounded-lg mr-6 p-2" href="index.html#contact">Contact</a>
+            <a class="rounded-lg mr-6 p-2" href="index.html#blog">Blog</a>
+            <div class="hidden">
+                <button class="navbar-burger flex items-center text-white p-3">
+                    <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Mobile menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="h-screen w-full bg-no-repeat bg-cover bg-center bg-pattern1 p-8" id="home">
+        <div class="w-full flex flex-wrap lg:justify-center lg:items-center">
+            <img class="mt-16 p-8 max-w[250px] lg:max-w-[500px] rounded-xl" src="media/neofetch.png" alt="">
+        <div class="max-w-xl mx-auto text-center">
+            <h1 class="lg:text-8xl text-5xl font-bold text-white">Instalasi Samba Pada Debian 11</h1>
+            <button type="button" class="text-white mt-8 bg-transparent outline outline-2 hover:outline-none hover:bg-gradient-to-br hover:from-purple-600 hover:to-blue-500 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2">Get Started</button>
+        </div>
+        </div>
+    </div>
+    <div class="p-8 flex flex-wrap justify-center items-center">
+        <div class="p-8 bg-[#070F2B] max-w-xl h-screen rounded-xl flex items-center">
+            <h1 class="text-white text-center text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto fugit molestias eius nobis natus doloremque illum sunt perferendis. Eveniet impedit dolores placeat hic quod similique aperiam id vel ipsa?</h1>
+        </div>
+    </div>
+    <div class="p-8 flex flex-wrap justify-center items-center bg-[#070F2B] max-w-xl rounded-xl mx-auto">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nStP_1qgpkM?si=KwJigWQW6hC3phcp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </div>
+    </body>
+</html>
