@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Valetta Man;
+    src: url("/font/ValettaMan.otf");
+}
+@font-face {
+    font-family: nevermine;
+    src: url("/font/NevermineDEMO.otf");
+}
+
+::-webkit-scrollbar-track{
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+    height: 10px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #555;
+}
