@@ -1,0 +1,540 @@
+/* Louis George Cafe */
+@font-face {
+    font-family: 'Louis George Cafe';
+    src: url(fonts/Louis\ George\ Cafe.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+    src: url(fonts/Louis\ George\ Cafe\ Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Louis George face';
+    src: url(fonts/Louis\ George\ Cafe\ Italic.ttf) format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Louis George face';
+    src: url(fonts/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+    font-style: italic;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+    overflow-x: hidden;
+    /*background-color: #ececec;*/
+    font-family: 'Lato', sans-serif;
+}
+
+a, abbr {
+    text-decoration: none;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav div {
+    margin: 0px;
+}
+
+#clearance {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#clearance > a {
+    color: white;
+    display: inline-block;
+    padding: 3px 4px;
+}
+
+#button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#button > a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 16px;
+    transition: 0.2s ease-in-out;
+}
+
+#button > a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+
+/* --> HEADER <-- */
+header {
+    background-image: url(media-daylight/compressed/entrance-header.jpg);
+    background-size: cover;
+    /*background-color: #d0d0d0;*/
+    height: 680px; /* original 48.625rem - 458px */ 
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* --> IMAGE SLIDER<-- */
+header > #main {
+    width: 50%;
+    height: 638px; /* 680 - 42 = 638, original 48.625rem - 458px */ 
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#image-slider {
+    width: 36rem;
+    overflow: hidden;
+    display: inline-block;
+    border-bottom: 2px solid #ececec;
+    border-right: 4px solid #ececec;
+    border-radius: 0.5rem;
+    box-shadow: 0px 16px 10px red;
+    animation: border-colors 10s ease-in-out infinite;
+}
+
+@keyframes border-colors {
+    0% {box-shadow: 0px 3px 10px red;}
+    20% {box-shadow: 0px 3px 10px green;}
+    40% {box-shadow: 0px 3px 10px blue;}
+    60% {box-shadow: 0px 3px 10px yellow;}
+    80% {box-shadow: 0px 3px 10px magenta;}
+    100% {box-shadow: 0px 3px 10px red;}
+}
+
+#image-slider img {
+    /*width: 38rem;*/
+    width: 100%;
+    display: none;
+}
+
+#image-slider #entrance {
+    width: 100%;
+    object-fit: contain;
+}
+
+#image-slider img:first-child {
+    display: block;
+}
+
+/* Welcome Text */
+header > #aside {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    width: 50%;
+    height: 638px; /* 680 - 42 = 638, original 48.625rem - 458px */
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #f6f6f6;
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page */
+article {
+    background-color: white;
+}
+
+/* Profile */
+article > #about {
+    color: white;
+    background-color: #ececec;
+    background-size: cover;
+    /*background-color: #e1e1e1;*/
+    box-sizing: border-box;
+    height: 770px;
+}
+
+#about > main {
+    height: 300px;
+/*background-color: #ca282c;*/
+    background-image: url(media-daylight/compressed/aaa.jpg);
+    background-repeat: round;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-bril {
+    display: flex;
+}
+
+#bril-img {
+    width: 45%;
+    height: 470px;
+    background-image: url(media-daylight/compressed/blue-mosaic-left.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bril-img img {
+    border-radius: 50%;
+    width: 16rem;
+    height: auto;
+}
+
+#bril-capt {
+    box-sizing: border-box;
+    width: 65%;
+    margin: auto;
+    height: 470px;
+    background-image: url(media-daylight/compressed/blue-mosaic-right.jpg);
+    background-size: cover;
+    padding: 72px 32px 52px;
+}
+
+#bril-capt > div {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px 32px 12px;
+    border-radius: 24px;
+    max-width: 600px;
+}
+
+#bril-capt > div > .profile-name {
+    font-family: 'Louis George Cafe', sans-serif;
+    color: #eeeeee;
+}
+
+#bril-capt > div > p.profile-caption {
+    font-family: 'Louis George Cafe', sans-serif;
+    font-size: smaller;
+    color: #ebeaea;
+}
+/* --> CARDS <-- */
+#cards {
+    background-color: #293646;
+    height: auto;
+}
+
+/*For unknown reason the code above
+does not change the bg color of #cards.
+#cards inherits the value of <article> instead.
+However, using inline styling works.
+#cards now uses background-image,
+look at the html for changing the image.
+Behold the majestic, glorious CSS!*/
+
+#cards-title {
+    padding-top: 1.8rem;
+    color: #e1e1e1;
+}
+
+#cards-subtitle {
+    font-size: 0.7rem;
+}
+
+#it-cards {
+/*
+    display: flex;
+    justify-content: space-around;
+*/    
+    text-align: center;    
+    padding: 16px;
+}
+
+#card-container {
+    display: inline-block;
+    background-color: #ffffffe8;
+    width: 310px;
+    height: 400px;
+    margin: 16px;
+    transition: 0.2s ease-out;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#it-cards img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#card-text {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+#card-text h3 {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder; 
+    padding: 6px 8px;
+    color: black;
+    text-align: left;
+}
+
+#card-details {
+    font-size: 12px;
+    margin: 6px 70px 6px 16px;
+    padding: 6px 8px;
+    text-align: left;
+    color: black;
+    text-align: left;
+}
+
+#card-container:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    animation: card-hover 3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+p.veritas {
+    font-size: 10px;
+    margin-top: 40px;
+    margin-left: 18px;
+    padding: 6px 8px;
+    text-align: left;
+    color: black;
+} 
+
+p.veritas span {
+    color: red;
+}
+
+@keyframes card-hover {
+    0% {box-shadow: 0px 5px 10px red;}
+    20% {box-shadow: 0px 5px 10px green;}
+    40% {box-shadow: 0px 5px 10px blue;}
+    60% {box-shadow: 0px 5px 10px yellow;}
+    80% {box-shadow: 0px 5px 10px magenta;}
+    100% {box-shadow: 0px 5px 10px red;}
+}
+/* Videos */
+#videos {
+    background-image: url(media-daylight/compressed/bgorange-2.jpg);
+    background-size: contain;
+    height: 640px;
+    display: flex;
+}
+
+#videos > main {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#videos > aside {
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#videos #video-text {
+    background-color: #00d3e2a2;
+    max-width: 360px;
+    height: calc(270px + 30px);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#video-text h2 {
+    font-size: 1.5rem;
+}
+
+#video-text hr {
+    max-width: 200px;
+}
+
+#video-text p {
+    font-size: 14px;
+    padding: 0px 34px;
+}
+
+/* TOP VISITORS */
+#friend-ref {
+    height: auto;
+    background-color: #000a0e;
+    justify-content: center;
+    padding: 32px 0px;
+}
+
+#svg-visitor {
+    background-image: url(media-daylight/02_icons/random_3/SVG/random_icons_12.svg);
+    background-size: 32rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#blog-container {
+    background-color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    width: 1000px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    transform: scale(0.8);
+    transition: 0.3s ease-out;
+}
+
+#blog-container:hover {
+    transform: scale(0.9);
+    transition: 0.3s ease-in;
+}
+
+#blog-container > img {
+    max-width: 300px;
+    max-height: 300px;
+    display: inline-block;
+}
+
+#blog-container h1 {
+    display: inline-block;
+}
+
+#blog-card-text {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 700px;
+    height: auto;
+    padding: 1.5rem;
+}
+
+#blog-card-text p {
+    padding-right: 6rem;
+    max-height: 80px;
+}
+
+#blog-card-text button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+#blog-card-text span {
+    color: #ff4d00;
+}
+.top-visitors {
+    color: #fafafa;
+}
+
+p.author {
+    margin-top: 32px;
+    font-size: 0.8rem;
+}
+
+.top-visitors {
+    font-size: 2rem;
+}
+
+#last {
+    height: 640px;
+    background-color: #04AA6D;
+    display: flex;
+}
+
+#last > main {
+    width: 40%;
+    height: 640px;
+    background-color: #ff4d00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#last > aside {
+    width: 95%;
+    height: 640px;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#last > main > h1 {
+    color: white;
+}
+
+#contact-form {
+    width: 600px;
+    height: auto;
+    background-color: #e1e1e1;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 16px 32px;
+}
+
+#contact-form input {
+    width: 95%;
+    height: 10px;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+#contact-form textarea {
+    width: 95%;
+    border-radius: 6px;
+    padding: 12px;
+    height: 120px;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-form button {
+    display: block;
+    margin-top: 1rem;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+#contact-form button:active {
+    background-color: blue;
+}
+
+footer {
+    height: 200px;
+    background-color: #2A2727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
